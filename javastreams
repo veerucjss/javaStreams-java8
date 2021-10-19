@@ -23,6 +23,7 @@ public class maxandmindemo{
         productsList.add(new Product3(3,"Lenevo Laptop",28000f));
         productsList.add(new Product3(4,"Sony Laptop",28000f));
         productsList.add(new Product3(5,"Apple Laptop",90000f));
+        productsList.add(new Product3(5,"Aspire Laptop",350000f));
         // max() method to get max Product price
         Product3 productA = productsList.stream().max((product1, product2)->product1.price > product2.price ? 1: -1).get();
         System.out.println(productA.price);
